@@ -1,6 +1,6 @@
-import { nodeQuestions } from '../data/node.js';
-import { javascriptQuestions } from '../data/javascript.js';
-import { mongoDbQuestions } from '../data/mongoDB.js'
+import { nodeQuestions } from './data/node.js';
+import { javascriptQuestions } from './data/javascript.js';
+import { mongoDbQuestions } from './data/mongoDB.js'
 
 const faqList = document.getElementById("faqList");
 const searchInput = document.getElementById("searchInput");
