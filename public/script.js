@@ -1,10 +1,10 @@
 import { nodeQuestions } from './data/node.js';
-import { javascriptQuestions } from './data/javascript.js';
-import { mongoDbQuestions } from './data/mongoDB.js';
-import { mySQLQuestions } from './data/mySql.js';
-import { apiQuestions } from './data/api.js';
-import { reactQuestions } from './data/react.js';
-import { javaQuestions } from './data/java.js';
+// import { javascriptQuestions } from './data/javascript.js';
+// import { mongoDbQuestions } from './data/mongoDB.js';
+// import { mySQLQuestions } from './data/mySql.js';
+// import { apiQuestions } from './data/api.js';
+// import { reactQuestions } from './data/react.js';
+// import { javaQuestions } from './data/java.js';
 // const javascriptQuestions = [
 //     {
 //         question: "1. What is JavaScript?",
