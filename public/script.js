@@ -1,10 +1,11 @@
 import { nodeQuestions } from './data/node.js';
-import { javascriptQuestions } from './data/javascript.js';
+// import { javascriptQuestions } from './data/javascript.js';
 // import { mongoDbQuestions } from './data/mongoDB.js';
 // import { mySQLQuestions } from './data/mySql.js';
-// import { apiQuestions } from './data/api.js';
-// import { reactQuestions } from './data/react.js';
-// import { javaQuestions } from './data/java.js';
+import { apiQuestions } from './data/api.js';
+import { reactQuestions } from './data/react.js';
+import { javaQuestions } from './data/java.js';
+
 // const javascriptQuestions = [
 //     {
 //         question: "1. What is JavaScript?",
@@ -2234,12 +2235,12 @@ const tabButtons = document.querySelectorAll(".tab-btn");
 
 const questions = {
     node: nodeQuestions,
-    javascript: javascriptQuestions,
+    // javascript: javascriptQuestions,
     // mongoDb: mongoDbQuestions,
     // mySQL: mySQLQuestions,
-    // api: apiQuestions,
-    // react: reactQuestions,
-    // java: javaQuestions,
+    api: apiQuestions,
+    react: reactQuestions,
+    java: javaQuestions,
 };
 
 let currentTopic = "node";
