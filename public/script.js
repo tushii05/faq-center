@@ -1,5 +1,5 @@
 import { nodeQuestions } from './data/node.js';
-import { javascriptQuestions } from './data/javascript.js';
+import { javascriptQuestions } from './data/data.js';
 import { mongoDbQuestions } from './data/mongoDB.js';
 import { mySQLQuestions } from './data/mySql.js';
 import { apiQuestions } from './data/api.js';
