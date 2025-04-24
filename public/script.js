@@ -1,5 +1,5 @@
 import { nodeQuestions } from './data/node.js';
-// import { javascriptQuestions } from './data/javascript.js';
+import { javascriptQuestions } from './data/javascript';
 import { mongoDbQuestions } from './data/mongoDB.js';
 import { mySQLQuestions } from './data/mySql.js';
 import { apiQuestions } from './data/api.js';
@@ -2235,7 +2235,7 @@ const tabButtons = document.querySelectorAll(".tab-btn");
 
 const questions = {
     node: nodeQuestions,
-    // javascript: javascriptQuestions,
+    javascript: javascriptQuestions,
     mongoDb: mongoDbQuestions,
     mySQL: mySQLQuestions,
     api: apiQuestions,
