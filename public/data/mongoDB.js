@@ -1,4 +1,5 @@
-export const mongoDbQuestions = [
+export const mongoDbQuestions = {
+    easy: [
     {
         question: "1. What is MongoDB?",
         answer: "MongoDB is a NoSQL document database that stores data in flexible, JSON-like documents. Example: { 'name': 'John', 'age': 30 }"
@@ -22,7 +23,8 @@ export const mongoDbQuestions = [
     {
         question: "6. What is BSON?",
         answer: "BSON is a binary representation of JSON-like documents, supporting additional data types. Example: { 'date': new Date() }"
-    },
+    },],
+    intermediate: [
     {
         question: "7. How does MongoDB handle data consistency?",
         answer: "MongoDB uses eventual consistency and supports multi-document transactions. Example: session.startTransaction()"
@@ -70,7 +72,8 @@ export const mongoDbQuestions = [
     {
         question: "18. What is a projection in MongoDB?",
         answer: "Projection selects specific fields to return in query results. Example: db.collection.find({}, { 'name': 1 })"
-    },
+    },],
+    advanced:[
     {
         question: "19. What is the purpose of the aggregate() method?",
         answer: "The aggregate() method performs aggregation operations on a collection. Example: db.collection.aggregate([{ $match: { 'status': 'A' } }])"
@@ -363,4 +366,5 @@ export const mongoDbQuestions = [
         question: "91. What is the shutdown() method?",
         answer: "The shutdown() method gracefully shuts down the MongoDB server. Example: db.adminCommand({ shutdown: 1 })"
     }
-];
+]
+};

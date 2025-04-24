@@ -52,7 +52,62 @@ function setTheme(theme) {
 
 function renderFAQ(topic, filter = "") {
     faqList.innerHTML = "";
-    const filtered = questions[topic].filter(q =>
+
+    // Get all questions for the current topic
+    const topicQuestions = questions[topic];
+
+    // Check if questions are categorized
+    const isCategorized = topicQuestions.easy && topicQuestions.intermediate && topicQuestions.advanced;
+
+    if (isCategorized) {
+        // Render categorized questions
+        renderCategorizedQuestions(topicQuestions, filter);
+    } else {
+        // Render uncategorized questions (original behavior)
+        renderUncategorizedQuestions(topicQuestions, filter);
+    }
+
+    setupToggle();
+}
+
+function renderCategorizedQuestions(topicQuestions, filter) {
+    // Render Easy questions
+    renderQuestionSection("Easy", topicQuestions.easy, filter);
+
+    // Render Intermediate questions
+    renderQuestionSection("Intermediate", topicQuestions.intermediate, filter);
+
+    // Render Advanced questions
+    renderQuestionSection("Advanced", topicQuestions.advanced, filter);
+}
+
+function renderQuestionSection(title, questions, filter) {
+    const filtered = questions.filter(q =>
+        q.question.toLowerCase().includes(filter.toLowerCase())
+    );
+
+    if (filtered.length > 0) {
+        const sectionHeader = document.createElement("h2");
+        sectionHeader.className = "difficulty-header";
+        sectionHeader.textContent = `${title} Questions`;
+        faqList.appendChild(sectionHeader);
+
+        filtered.forEach((item) => {
+            const li = document.createElement("li");
+            li.classList.add("question-item");
+            li.innerHTML = `
+                <button class="question-btn">${item.question}</button>
+                <div class="answer-box">
+                    <div class="answer-content">${item.answer}</div>
+                </div>
+            `;
+            faqList.appendChild(li);
+        });
+    }
+}
+
+function renderUncategorizedQuestions(questions, filter) {
+    const filtered = questions.filter(q =>
         q.question.toLowerCase().includes(filter.toLowerCase())
     );
 
@@ -72,8 +127,6 @@ function renderFAQ(topic, filter = "") {
         `;
         faqList.appendChild(li);
     });
-
-    setupToggle();
 }
 
 function setupToggle() {
