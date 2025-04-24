@@ -2234,12 +2234,12 @@ const tabButtons = document.querySelectorAll(".tab-btn");
 
 const questions = {
     node: nodeQuestions,
-    javascript: javascriptQuestions,
-    mongoDb: mongoDbQuestions,
-    mySQL: mySQLQuestions,
-    api: apiQuestions,
-    react: reactQuestions,
-    java: javaQuestions,
+    // javascript: javascriptQuestions,
+    // mongoDb: mongoDbQuestions,
+    // mySQL: mySQLQuestions,
+    // api: apiQuestions,
+    // react: reactQuestions,
+    // java: javaQuestions,
 };
 
 let currentTopic = "node";
