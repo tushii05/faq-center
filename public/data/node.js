@@ -48,7 +48,7 @@ export const nodeQuestions = {
         },
         {
             question: "12. How can you scale a Node.js application?",
-            answer: "Node.js applications can be scaled by using techniques like clustering, load balancing, and vertical scaling. Clustering involves running multiple instances of the application on different cores, while load balancing distributes incoming requests across these instances."
+            answer: "Node.js applications can be scaled by using techniques like clustering, load balancing, and vertical scaling. Clustering involves running multiple instances of the application on different cores, while load balancing distributes incoming traffic across multiple servers."
         },
         {
             question: "13. Explain the concept of Promises in Node.js.",
