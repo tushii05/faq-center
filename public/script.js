@@ -5,6 +5,7 @@ import { mySQLQuestions } from './data/mySql.js';
 import { apiQuestions } from './data/api.js';
 import { reactQuestions } from './data/react.js';
 import { javaQuestions } from './data/java.js';
+import { architectureQuestions } from './data/architecture.js';
 
 const faqList = document.getElementById("faqList");
 const searchInput = document.getElementById("searchInput");
@@ -21,6 +22,7 @@ const questions = {
     api: apiQuestions,
     react: reactQuestions,
     java: javaQuestions,
+    architecture: architectureQuestions
 };
 
 let currentTopic = "node";
